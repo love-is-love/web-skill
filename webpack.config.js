@@ -21,7 +21,8 @@ module.exports = {
     devServer: {
         port: 8080,
         hot:true,
-        open:true
+        open:true,
+        historyApiFallback: true,       // 保证路由history模式刷新可以找到页面
     },
     module:{                    // 模块    
         rules:[
